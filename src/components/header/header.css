@@ -51,6 +51,15 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.me img {
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.me img:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
 /* ================= SCROLL DOWN SECTION =============== */
 .scroll__down {
     position: absolute;
@@ -64,7 +73,7 @@ header {
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 100vh;
     }
 }
 

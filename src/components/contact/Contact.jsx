@@ -4,15 +4,22 @@ import {MdOutlineMail} from 'react-icons/md'
 import {RiMessengerFill} from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+// import {toast} from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    // toast.configure()
     e.preventDefault();
 
     emailjs.sendForm('service_bp5ncjq', 'template_qg4g2uj', form.current, 'g_pCeElPc632TK0As');
-
+    // toast('Thank you! Your message has been sent!', 
+    //   {position: toast.POSITION.BOTTOM_CENTER});
     e.target.reset();
   };
 

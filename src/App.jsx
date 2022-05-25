@@ -8,7 +8,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
         <Nav />
         <About />
         <Experience />
-        <Service />
+        {/* <Service /> */}
         <Portfolio />
         <Testimonials />
         <Contact />

@@ -1,6 +1,6 @@
 .experience__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -38,6 +38,18 @@
 .experience__icon {
     margin-top: 6px;
     color: var(--color-primary);
+}
+
+.experience__backend {
+    display: none;
+}
+
+.experience__frontend h3 {
+    display: none;
+}
+
+.experience__container small {
+    display: none;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
